@@ -153,18 +153,18 @@ method:DELETE
 '''
 patients
 
-patient_id  patient_name   assigned_doctor  department        appointment_date     status      consultation_fee     
+patient_id  patient_name   assigned_doctor  department        appointment_date     status      consultation_fee      
 
-1           Arun           Dr Rajesh        Dermatology       2026-09-10           pending     500             
-2           Sneha Nair     Dr Meera         General Medicine  2026-09-11           completed   700          
-3           Anjali Menon   Dr Priya         cardiology        2026-09-12           pending     400
-4           vishnu         Dr Anil          orthopaedics      2026-09-14           pending     300
-5           Rahul das      Dr Suresh        paediatrics       2026-09-15           completed   350
+1           Arun           Dr Rajesh        Dermatology       2026-09-10           pending     500               
+2           Sneha Nair     Dr Meera         General Medicine  2026-09-11           completed   700            
+3           Anjali Menon   Dr Priya         cardiology        2026-09-12           pending     400  
+4           vishnu         Dr Anil          orthopaedics      2026-09-14           pending     300  
+5           Rahul das      Dr Suresh        paediatrics       2026-09-15           completed   350  
 
 
 `http_request for adding new patient`
 
-url:localhost:8000/patients/
+url:localhost:8000/patients/  
 method:POST
 body{"patient_name":"Arun",
         "assigned_doctor":"Dr Rajesh",
@@ -176,17 +176,17 @@ body{"patient_name":"Arun",
 
 `http_request for list all patient`
 
-url:localhost:8000/patients/
+url:localhost:8000/patients/  
 method:GET
 
 `http_request for fetching patient detail`
 
-url:localhost:8000/patients/3/
+url:localhost:8000/patients/3/  
 method:GET
 
 `http_request for update patient`
 
-url:localhost:8000/patients/4/
+url:localhost:8000/patients/4/  
 method:PUT
 body{"patient_name":"Anjali menon",
         "assigned_doctor":"Dr Priya",
@@ -198,6 +198,6 @@ body{"patient_name":"Anjali menon",
 
 `http_request for delete movie`
 
-url:localhost:8000/patients/5/
+url:localhost:8000/patients/5/  
 method:DELETE
 
