@@ -111,7 +111,93 @@ id      title      year     language        run_time
 ```
 
 `http_request for adding new movie`
+
+url:localhost:8000/movie/
+method:POST
+body{"title":"kgf",
+      "year":2008,
+      "language":"kannada"
+      "run_time":160}
+
+      
 `http_request for list all movie`
+
+url:localhost:8000/movie/
+method:GET
+
+
 `http_request for fetching movie detail`
+
+url:localhost:8000/movie/1/
+method:GET
+
 `http_request for update movie`
+
+url:localhost:8000/movie/5/
+method:PUT
+body{"title":"BKD",
+     "year":2026,
+     "language":"malayalam,
+     "run_time":150,
+     }
+
+
 `http_request for delete movie`
+
+url:localhost:8000/movie/2/
+method:DELETE
+
+
+### Hospital Task
+
+'''
+patients
+
+patient_id  patient_name   assigned_doctor  department        appointment_date     status      consultation_fee     
+
+1           Arun           Dr Rajesh        Dermatology       2026-09-10           pending     500             
+2           Sneha Nair     Dr Meera         General Medicine  2026-09-11           completed   700          
+3           Anjali Menon   Dr Priya         cardiology        2026-09-12           pending     400
+4           vishnu         Dr Anil          orthopaedics      2026-09-14           pending     300
+5           Rahul das      Dr Suresh        paediatrics       2026-09-15           completed   350
+
+
+`http_request for adding new patient`
+
+url:localhost:8000/patients/
+method:POST
+body{"patient_name":"Arun",
+        "assigned_doctor":"Dr Rajesh",
+        "department":"Dermatology",   
+        "appointment_date":20206-09-10,  
+        "status":"pending",  
+        "consultation_fee":500
+    }
+
+`http_request for list all patient`
+
+url:localhost:8000/patients/
+method:GET
+
+`http_request for fetching patient detail`
+
+url:localhost:8000/patients/3/
+method:GET
+
+`http_request for update patient`
+
+url:localhost:8000/patients/4/
+method:PUT
+body{"patient_name":"Anjali menon",
+        "assigned_doctor":"Dr Priya",
+        "department":"Cardiology",   
+        "appointment_date":20206-09-12,  
+        "status":"pending",  
+        "consultation_fee":400
+    }
+
+`http_request for delete movie`
+
+url:localhost:8000/patients/5/
+method:DELETE
+
